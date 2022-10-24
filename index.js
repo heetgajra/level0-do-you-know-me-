@@ -1,8 +1,8 @@
 const { exit } = require("process");
 var readlineSync = require("readline-sync")
 var score = 0
-var userName = readlineSync.question("wizard wants to know your name ! ");
-console.log("welcome " + userName + " to the quizz of heet's hell ! ")
+var userName = readlineSync.question(" you name please ");
+console.log("welcome " + userName + " to the quizz heet's life ! ")
 
 
 var highScore = 0
@@ -31,31 +31,22 @@ if(userAnswerName === "yes"){
 }
 
 
- var questions =[//{
-//   question: " is your name " + userName +  " ? ",
-//   answer: "yes"
-// },
-   {
-  question: " In what house did the Sorting Hat almost put Harry ? ",
-  answer: "slytherin"
-}, {
-  question: " What subject does Professor McGonagall teach? ",
-  answer: "Transfiguration" 
-}, {
-  question: " What position does Harry play on the Quidditch team?",
-  answer: "seeker"
+
+ var questions =[{
+  question: " What's my age ? ",
+  answer: "20"
 } ,{
-  question: "What is Fluffy?",
-  answer: "dog"
+  question: "What is my hobby ? ",
+  answer: "reading"
 },{
-  question: "What dark wizard did Albus Dumbledore defeat in 1945?",
-  answer: "grinderwarld"
+  question: "my favourite song ? ",
+  answer: "save your tears"
 },{
-  question: "What is Tom Riddle's middle name?",
-  answer: "Marvolo"
+  question: "What is my favourite movie ? ",
+  answer: "fight club"
 },{
-  question: "How did Harry and Ron get to Hogwarts their second year?",
-  answer: " flying car"
+  question: "my cheat snack ? ",
+  answer: "vadapav"
 }
   ]
 
@@ -65,5 +56,5 @@ for (var i=0; i< questions.length; i++){
 }
 console.log(" you achieved a score of ", score)
 console.log("_______________")
-console.log("you made a high score! ", score)
+console.log("you made a high score! ", score + " send a screenshot to get mentioned in the list ")
 console.log("_______________")
